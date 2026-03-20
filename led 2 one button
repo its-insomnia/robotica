@@ -1,0 +1,26 @@
+// C++ code
+//
+int _25_25 = 0;
+
+int i = 0;
+
+void setup()
+{
+  pinMode(3, INPUT);
+  pinMode(2, OUTPUT);
+
+  i += 0;
+}
+
+void loop()
+{
+  if (digitalRead(3) == 1) {
+    i = (i + 1);
+  }
+  if (i % 2 == 0) {
+    digitalWrite(2, HIGH);
+  } else {
+    digitalWrite(2, LOW);
+  }
+  delay(300); // Wait for 300 millisecond(s)
+}
